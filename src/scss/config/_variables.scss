@@ -1,12 +1,23 @@
-$color-background: #e4e4e4;
-$color-text: #444444;
-$color-logo: #fc4887;
-$color-primary: #1691c3;
+// ************************************ COLORS ************************************
+$color-primary: #08A6E4;
+$color-primary-shadow: rgba(7, 172, 230, .16);
+$color-card-shadow: #00000029;
+$color-redish: #FB3B64;
+$color-green: #55DFB4;
+$color-black: #000000;
+$color-grey: #A5A5A5;
+$color-light-grey: #F7F7F7;
+$color-white: #FFFFFF;
 
-$font-primary: 'Open Sans', sans-serif;
-$font-logo: 'Oleo Script', serif;
+// ************************************ FONTS ************************************
+$font-primary: 'Raleway', sans-serif;
+$font-regular: 'Open Sans', sans-serif;
+
+// ************************************ MAIN SETTINGS ************************************
+$max-width: 1352px;
+$padding-main: 15px;
 
 $breakpoint-desktop: 800px;
 
+
 $border-radius: 5px;
-$padding-main: 10px;

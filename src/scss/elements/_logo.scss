@@ -1,19 +1,15 @@
 .logo {
-  background-color: $color-logo;
-  font-size: 2rem;
-  font-family: $font-logo;
+  font-family: $font-primary;
+  font-weight: 300;
+  font-size: 3.2rem;
+  line-height: 3.7rem;
   text-decoration: none;
-  border-radius: $border-radius;
-  padding: $padding-main;
-  display: inline-block;
-  order: 1;
-  align-self: center;
+  color: $color-primary;
+  //order: 1;
 
   &:link,
   &:visited,
   &:hover,
-  &:active {
-    color: #fff;
-  }
+  &:active {}
 
 }
