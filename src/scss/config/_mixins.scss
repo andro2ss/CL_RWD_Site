@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@mixin desktop {
+  @media screen and (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin grid($columns) {
+  @for $i from 1 through $columns {
+    .col-#{$i} {
+      width: math.div(100%, $columns) * $i;
+    }
+  }
+}

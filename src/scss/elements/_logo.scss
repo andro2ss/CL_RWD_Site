@@ -1,0 +1,19 @@
+.logo {
+  background-color: $color-logo;
+  font-size: 2rem;
+  font-family: $font-logo;
+  text-decoration: none;
+  border-radius: $border-radius;
+  padding: $padding-main;
+  display: inline-block;
+  order: 1;
+  align-self: center;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    color: #fff;
+  }
+
+}
