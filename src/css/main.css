@@ -390,24 +390,31 @@ html {
   flex-direction: column;
   margin: auto;
   align-items: center;
+  min-height: 72rem;
 }
 
 .statistic__title {
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   color: #000000;
-  line-height: 2.625rem;
-  padding: 6.25rem 0;
+  line-height: 3.5rem;
+  padding: 8rem 0 2.5rem 0;
+  text-align: center;
 }
 
 .statistic__containers {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-  padding: 0 25.75rem;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+@media screen and (min-width: 800px) {
+  .statistic__containers {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .statistic__container {
@@ -418,6 +425,7 @@ html {
 .box__image {
   margin: auto;
   position: relative;
+  height: 7rem;
 }
 
 .statistic__container:nth-child(1) > .box__image {
@@ -487,11 +495,10 @@ html {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: 0.3725rem;
-  line-height: 1.5rem;
-  color: var(--color-black);
-  padding-top: 4.8125rem;
+  font-size: 2rem;
+  letter-spacing: 0.596rem;
+  line-height: 2.4rem;
+  color: #000000;
   padding-bottom: 1.1875rem;
 }
 
@@ -499,9 +506,14 @@ html {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 1.0625rem;
+  font-size: 1.7rem;
   color: #A5A5A5;
-  line-height: 1.5rem;
-  padding-bottom: 7.5625rem;
+  line-height: 2rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (min-width: 800px) {
+  .statistic__container .item__text {
+    padding-bottom: 12.1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
