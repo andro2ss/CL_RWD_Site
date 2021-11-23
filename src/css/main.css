@@ -508,4 +508,85 @@ html {
     padding-bottom: 12.1rem;
   }
 }
+
+.benefits__box {
+  background: #F7F7F7;
+  padding: 0.1px 0;
+}
+.benefits__box img {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  z-index: 10;
+}
+.benefits__box .benefits__container {
+  display: flex;
+  flex-direction: column-reverse;
+  background: #FFFFFF;
+  padding: 3rem 2.2rem 3rem 2.2rem;
+  margin: 4rem 3rem;
+}
+.benefits__box .benefits__container .box__image {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 3rem;
+}
+.benefits__box .benefits__container .box__image .image__iphone {
+  transform: translateX(12%);
+}
+.benefits__box .benefits__container .box__image .item__rectangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20%;
+  transform: rotate(45deg);
+  border-radius: 30%;
+  background: #FB3B64;
+  z-index: 5;
+}
+.benefits__box .benefits__container .box__image .item__circle {
+  position: absolute;
+  top: 0;
+  padding: 35%;
+  border-radius: 50%;
+  background: #08A6E4;
+  z-index: 5;
+  transform: translateX(17.5%);
+}
+.benefits__box .box__text .benefits__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  color: #000000;
+  text-align: left;
+  padding-bottom: 2rem;
+}
+.benefits__box .box__text .benefits__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #000000;
+  text-align: left;
+}
+.benefits__box .benefits__containers {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  margin: 4rem 3rem;
+}
+.benefits__box .benefits__containers .box__article3 {
+  padding: 3rem 2.2rem 3rem 2.2rem;
+}
+.benefits__box .benefits__containers .box__trumpet {
+  background: #55DFB4;
+  width: 100%;
+  height: 100%;
+  padding-top: 3rem;
+}
+.benefits__box .benefits__containers .box__trumpet .image__trumpet {
+  width: 80%;
+}
 /*# sourceMappingURL=main.css.map */
