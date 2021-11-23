@@ -390,7 +390,6 @@ html {
   flex-direction: column;
   margin: auto;
   align-items: center;
-  min-height: 72rem;
 }
 
 .statistic__title {
@@ -526,11 +525,47 @@ html {
   padding: 3rem 2.2rem 3rem 2.2rem;
   margin: 4rem 3rem;
 }
+@media screen and (min-width: 800px) {
+  .benefits__box .benefits__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .benefits__box .benefits__container .box__text {
+    position: relative;
+    justify-content: center;
+  }
+  .benefits__box .benefits__container .box__text::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    left: 0;
+    bottom: 1rem;
+  }
+  .benefits__box .benefits__container .box__article1::after {
+    background: #FB3B64;
+  }
+  .benefits__box .benefits__container .box__article2::after {
+    background: #08A6E4;
+  }
+  .benefits__box .benefits__container:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .benefits__box .benefits__container:nth-child(2) .box__iphone {
+    margin: 0;
+  }
+}
 .benefits__box .benefits__container .box__image {
   position: relative;
   width: 80%;
   height: 100%;
   margin-bottom: 3rem;
+}
+@media screen and (min-width: 800px) {
+  .benefits__box .benefits__container .box__image {
+    width: 40%;
+    margin: auto 5rem;
+  }
 }
 .benefits__box .benefits__container .box__image .image__iphone {
   transform: translateX(12%);
@@ -571,6 +606,14 @@ html {
   color: #000000;
   text-align: left;
 }
+@media screen and (min-width: 800px) {
+  .benefits__box .box__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 .benefits__box .benefits__containers {
   display: flex;
   flex-direction: column;
@@ -588,5 +631,41 @@ html {
 }
 .benefits__box .benefits__containers .box__trumpet .image__trumpet {
   width: 80%;
+}
+@media screen and (min-width: 800px) {
+  .benefits__box .benefits__containers {
+    flex-direction: row;
+    justify-content: space-between;
+    background: #F7F7F7;
+    position: relative;
+  }
+  .benefits__box .benefits__containers .containers__box {
+    flex-grow: 3;
+    margin-right: 6rem;
+  }
+  .benefits__box .benefits__containers .containers__box .box__article3 {
+    background: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  .benefits__box .benefits__containers .containers__box .box__article3::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 45%;
+    left: 2.2rem;
+    bottom: 2rem;
+    background: #55DFB4;
+  }
+  .benefits__box .benefits__containers .box__trumpet {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+  }
+  .benefits__box .benefits__containers .box__trumpet .image__trumpet {
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
