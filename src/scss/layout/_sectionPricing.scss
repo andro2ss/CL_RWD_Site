@@ -1,0 +1,123 @@
+.pricing__box {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .pricing__title {
+    font-family: $font-primary;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 4.2rem;
+    color: $color-black;
+    margin-bottom: 1.5rem;
+  }
+
+  .pricing__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .pricing__container {
+      position: relative;
+      border-radius: 1.8rem;
+      padding: 2rem 2rem;
+      margin-bottom: 5.4rem;
+      width: 33.3rem;
+
+      &:nth-child(1) {
+        border: 0.1rem solid $color-redish;
+
+        .pricing__value {
+          color: $color-redish;
+        }
+      }
+
+      &:nth-child(2) {
+        border: 0.1rem solid $color-primary;
+        width: 37.9rem;
+        box-shadow: 5px 10px 27px #07ACE629;
+
+        .pricing__value {
+          color: $color-primary;
+        }
+      }
+
+      &:nth-child(3) {
+        border: 0.1rem solid $color-green;
+
+        .pricing__value {
+          color: $color-green;
+        }
+      }
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      column-gap: 0.5rem;
+
+      .container__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 12rem;
+
+        .pricing__title--small {
+          font-family: $font-primary;
+          font-size: 2rem;
+          font-weight: 700;
+          line-height: 0.1rem;
+          color: $color-black;
+          margin-bottom: 3rem;
+        }
+
+        .pricing__value {
+          font-family: $font-regular;
+          font-weight: 300;
+          font-size: 4.6rem;
+          line-height: 0.2rem;
+          margin-bottom: 3.6rem;;
+        }
+
+        .pricing__description {
+          font-family: $font-primary;
+          font-weight: 700;
+          font-size: 1.2rem;
+          line-height: 0.1rem;
+          color: $color-black;
+        }
+      }
+
+      .pricing__list {
+        font-family: $font-regular;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 4.1rem;
+        padding-bottom: 3rem;
+        .list__item{
+          list-style-image: url("../img/Ckechmark-1.svg");
+        }
+        .list__item--bad{
+          list-style-image: url("../img/Close.svg");
+        }
+      }
+
+      .pricing__btn {
+        font-family: $font-regular;
+        font-weight: 700;
+        font-size: 1.3rem;
+        line-height: 4.1rem;
+        color: $color-white;
+
+        position: absolute;
+        background: black;
+        border-radius: 2.3rem;
+        padding: 0.7rem 5.45rem;
+        transform: translateX(-50%) translateY(-50%);
+        top: 100%;
+        left: 50%;
+      }
+    }
+  }
+}
