@@ -807,4 +807,36 @@ html {
   top: 100%;
   left: 50%;
 }
+
+@media screen and (min-width: 800px) {
+  .pricing__box {
+    width: 80%;
+    row-gap: 4rem;
+  }
+  .pricing__box .pricing__boxes {
+    flex-direction: row;
+    justify-content: space-between;
+    -moz-column-gap: 1rem;
+         column-gap: 1rem;
+  }
+  .pricing__box .pricing__boxes .pricing__container {
+    padding-top: 4rem;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    max-width: 37.2rem;
+  }
+  .pricing__box .pricing__boxes .pricing__container .pricing__list {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pricing__box .pricing__boxes .pricing__container:nth-child(2) {
+    max-width: 40.5rem;
+    padding: 6rem 2rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
