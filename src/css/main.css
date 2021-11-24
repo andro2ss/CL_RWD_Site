@@ -512,29 +512,25 @@ html {
   background: #F7F7F7;
   padding: 0.1px 0;
 }
-.benefits__box img {
-  position: relative;
-  margin: 0 auto;
-  max-width: 100%;
-  z-index: 10;
-}
 .benefits__box .benefits__container {
   display: flex;
   flex-direction: column-reverse;
   background: #FFFFFF;
-  padding: 3rem 2.2rem 3rem 2.2rem;
   margin: 4rem 3rem;
 }
 .benefits__box .benefits__container .box__image {
   position: relative;
   width: 80%;
   height: 100%;
-  margin-bottom: 3rem;
+  margin-top: 3rem;
 }
-.benefits__box .benefits__container .box__image .image__iphone {
-  transform: translateX(12%);
+.benefits__box .benefits__container .box__image .image__item {
+  position: relative;
+  margin: 0 auto;
+  max-width: 100%;
+  z-index: 10;
 }
-.benefits__box .benefits__container .box__image .item__rectangle {
+.benefits__box .benefits__container .box__macbook .item__rectangle {
   position: absolute;
   top: 0;
   right: 0;
@@ -544,7 +540,10 @@ html {
   background: #FB3B64;
   z-index: 5;
 }
-.benefits__box .benefits__container .box__image .item__circle {
+.benefits__box .benefits__container .box__iphone .image__iphone {
+  transform: translateX(12%);
+}
+.benefits__box .benefits__container .box__iphone .item__circle {
   position: absolute;
   top: 0;
   padding: 35%;
@@ -553,7 +552,10 @@ html {
   z-index: 5;
   transform: translateX(17.5%);
 }
-.benefits__box .box__text .benefits__title {
+.benefits__box .benefits__container .box__text {
+  padding: 3rem 2.2rem 3rem 2.2rem;
+}
+.benefits__box .benefits__container .box__text .benefits__title {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 3rem;
@@ -562,7 +564,7 @@ html {
   text-align: left;
   padding-bottom: 2rem;
 }
-.benefits__box .box__text .benefits__text {
+.benefits__box .benefits__container .box__text .benefits__text {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
@@ -570,57 +572,32 @@ html {
   color: #000000;
   text-align: left;
 }
-.benefits__box .benefits__containers {
-  display: flex;
+.benefits__box .benefits__container:nth-child(3) {
   flex-direction: column;
+  background: #F7F7F7;
+  padding: 0;
+  min-height: 40rem;
+}
+.benefits__box .benefits__container:nth-child(3) .box__article3 {
   background: #FFFFFF;
-  margin: 4rem 3rem;
 }
-.benefits__box .benefits__containers .box__article3 {
-  padding: 3rem 2.2rem 3rem 2.2rem;
-}
-.benefits__box .benefits__containers .box__trumpet {
+.benefits__box .benefits__container:nth-child(3) .box__trumpet {
   background: #55DFB4;
   width: 100%;
-  height: 100%;
-  padding-top: 3rem;
-}
-.benefits__box .benefits__containers .box__trumpet .image__trumpet {
-  width: 80%;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 10%;
+  padding-right: 15%;
 }
 @media screen and (min-width: 800px) {
   .benefits__box .benefits__container {
+    width: 70%;
+    margin: 4rem auto;
     flex-direction: row;
     justify-content: space-between;
-    min-height: 37rem;
-  }
-  .benefits__box .benefits__container img {
-    max-height: 31rem;
-  }
-  .benefits__box .benefits__container .item__circle {
-    padding: 30%;
-  }
-  .benefits__box .benefits__container .box__image {
-    width: 40%;
-    margin: auto 5rem;
-  }
-  .benefits__box .benefits__container .box__text {
-    position: relative;
-    justify-content: center;
-  }
-  .benefits__box .benefits__container .box__text::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 70%;
-    left: 0;
-    bottom: 1rem;
-  }
-  .benefits__box .benefits__container .box__article1::after {
-    background: #FB3B64;
-  }
-  .benefits__box .benefits__container .box__article2::after {
-    background: #08A6E4;
+    align-items: center;
+    height: 37rem;
   }
   .benefits__box .benefits__container:nth-child(2) {
     flex-direction: row-reverse;
@@ -628,10 +605,59 @@ html {
   .benefits__box .benefits__container:nth-child(2) .box__iphone {
     margin: 0;
   }
-  .benefits__box .benefits__containers {
+  .benefits__box .benefits__container:nth-child(3) {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     background: #F7F7F7;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+  .benefits__box .benefits__container:nth-child(3) .box__trumpet {
+    width: 35%;
+    padding: 3rem 3rem 0 0;
+    margin: 0;
+  }
+  .benefits__box .benefits__container:nth-child(3) .box__trumpet .image__trumpet {
+    height: 70%;
+  }
+  .benefits__box .benefits__container .item__circle {
+    padding: 30%;
+  }
+  .benefits__box .benefits__container .box__image {
+    width: 45%;
+    margin: auto 0;
+  }
+  .benefits__box .benefits__container .box__text {
+    height: 100%;
+    width: 45%;
+  }
+  .benefits__box .benefits__container .box__text .benefits__text {
+    position: relative;
+  }
+  .benefits__box .benefits__container .box__text .benefits__text::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    max-width: 33rem;
+    left: 0;
+    bottom: -3rem;
+  }
+  .benefits__box .benefits__container .box__article1 .benefits__text::after {
+    background: #FB3B64;
+  }
+  .benefits__box .benefits__container .box__article2 .benefits__text::after {
+    background: #08A6E4;
+  }
+  .benefits__box .benefits__container .box__article3 {
+    flex-grow: 3;
+  }
+  .benefits__box .benefits__container .box__article3 .benefits__text::after {
+    background: #55DFB4;
+  }
+  .benefits__box .benefits__containers {
+    flex-direction: row;
     position: relative;
   }
   .benefits__box .benefits__containers .containers__box {
@@ -652,15 +678,6 @@ html {
     left: 2.2rem;
     bottom: 2rem;
     background: #55DFB4;
-  }
-  .benefits__box .benefits__containers .box__trumpet {
-    width: auto;
-    display: flex;
-    justify-content: center;
-    padding-top: 6rem;
-  }
-  .benefits__box .benefits__containers .box__trumpet .image__trumpet {
-    height: 100%;
   }
   .benefits__box .box__text {
     width: 40%;
