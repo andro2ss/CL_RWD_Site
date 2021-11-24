@@ -525,47 +525,11 @@ html {
   padding: 3rem 2.2rem 3rem 2.2rem;
   margin: 4rem 3rem;
 }
-@media screen and (min-width: 800px) {
-  .benefits__box .benefits__container {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .benefits__box .benefits__container .box__text {
-    position: relative;
-    justify-content: center;
-  }
-  .benefits__box .benefits__container .box__text::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 70%;
-    left: 0;
-    bottom: 1rem;
-  }
-  .benefits__box .benefits__container .box__article1::after {
-    background: #FB3B64;
-  }
-  .benefits__box .benefits__container .box__article2::after {
-    background: #08A6E4;
-  }
-  .benefits__box .benefits__container:nth-child(2) {
-    flex-direction: row-reverse;
-  }
-  .benefits__box .benefits__container:nth-child(2) .box__iphone {
-    margin: 0;
-  }
-}
 .benefits__box .benefits__container .box__image {
   position: relative;
   width: 80%;
   height: 100%;
   margin-bottom: 3rem;
-}
-@media screen and (min-width: 800px) {
-  .benefits__box .benefits__container .box__image {
-    width: 40%;
-    margin: auto 5rem;
-  }
 }
 .benefits__box .benefits__container .box__image .image__iphone {
   transform: translateX(12%);
@@ -606,14 +570,6 @@ html {
   color: #000000;
   text-align: left;
 }
-@media screen and (min-width: 800px) {
-  .benefits__box .box__text {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
 .benefits__box .benefits__containers {
   display: flex;
   flex-direction: column;
@@ -633,6 +589,45 @@ html {
   width: 80%;
 }
 @media screen and (min-width: 800px) {
+  .benefits__box .benefits__container {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 37rem;
+  }
+  .benefits__box .benefits__container img {
+    max-height: 31rem;
+  }
+  .benefits__box .benefits__container .item__circle {
+    padding: 30%;
+  }
+  .benefits__box .benefits__container .box__image {
+    width: 40%;
+    margin: auto 5rem;
+  }
+  .benefits__box .benefits__container .box__text {
+    position: relative;
+    justify-content: center;
+  }
+  .benefits__box .benefits__container .box__text::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    left: 0;
+    bottom: 1rem;
+  }
+  .benefits__box .benefits__container .box__article1::after {
+    background: #FB3B64;
+  }
+  .benefits__box .benefits__container .box__article2::after {
+    background: #08A6E4;
+  }
+  .benefits__box .benefits__container:nth-child(2) {
+    flex-direction: row-reverse;
+  }
+  .benefits__box .benefits__container:nth-child(2) .box__iphone {
+    margin: 0;
+  }
   .benefits__box .benefits__containers {
     flex-direction: row;
     justify-content: space-between;
@@ -666,6 +661,12 @@ html {
   }
   .benefits__box .benefits__containers .box__trumpet .image__trumpet {
     height: 100%;
+  }
+  .benefits__box .box__text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */

@@ -16,57 +16,11 @@
     padding: 3rem 2.2rem 3rem 2.2rem;
     margin: 4rem 3rem;
 
-    @include desktop {
-      flex-direction: row;
-      justify-content: space-between;
-
-      .box__text {
-        position: relative;
-        justify-content: center;
-
-        &::after {
-          content: "";
-          position: absolute;
-          height: 4px;
-          width: 70%;
-          left: 0;
-          bottom: 1rem;
-        }
-      }
-      .box__article1 {
-        &::after {
-          background: $color-redish;
-        }
-      }
-      .box__article2 {
-        &::after {
-          background: $color-primary;
-        }
-      }
-
-
-      &:nth-child(2) {
-        flex-direction: row-reverse;
-
-        .box__iphone {
-          margin: 0;
-        }
-      }
-
-
-    }
-
     .box__image {
       position: relative;
       width: 80%;
       height: 100%;
       margin-bottom: 3rem;
-
-      @include desktop {
-        width: 40%;
-        margin: auto 5rem;
-      }
-
 
       .image__iphone {
         transform: translateX(12%);
@@ -81,7 +35,6 @@
         border-radius: 30%;
         background: $color-redish;
         z-index: 5;
-
       }
 
       .item__circle {
@@ -100,8 +53,6 @@
   }
 
   .box__text {
-
-
     .benefits__title {
       font-family: $font-primary;
       font-weight: 400;
@@ -120,14 +71,6 @@
       color: $color-black;
       text-align: left;
     }
-
-    @include desktop {
-      width: 40%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
   }
 
   .benefits__containers {
@@ -138,7 +81,6 @@
 
     .box__article3 {
       padding: 3rem 2.2rem 3rem 2.2rem;
-
     }
 
     .box__trumpet {
@@ -147,15 +89,73 @@
       height: 100%;
       padding-top: 3rem;
 
-
       .image__trumpet {
         width: 80%;
-
-
       }
     }
 
-    @include desktop {
+  }
+
+  @include desktop {
+    .benefits__container {
+      flex-direction: row;
+      justify-content: space-between;
+      min-height: 37rem;
+
+      img {
+        max-height: 31rem;
+      }
+
+      .item__circle {
+        padding: 30%;
+      }
+
+      .box__image {
+
+        width: 40%;
+        margin: auto 5rem;
+
+      }
+
+      .box__text {
+        position: relative;
+        justify-content: center;
+
+        &::after {
+          content: "";
+          position: absolute;
+          height: 4px;
+          width: 70%;
+          left: 0;
+          bottom: 1rem;
+        }
+      }
+
+      .box__article1 {
+        &::after {
+          background: $color-redish;
+        }
+      }
+
+      .box__article2 {
+        &::after {
+          background: $color-primary;
+        }
+      }
+
+
+      &:nth-child(2) {
+        flex-direction: row-reverse;
+
+        .box__iphone {
+          margin: 0;
+        }
+      }
+
+
+    }
+    .benefits__containers {
+
       flex-direction: row;
       justify-content: space-between;
       background: $color-light-grey;
@@ -183,16 +183,29 @@
 
         }
       }
+
       .box__trumpet {
         width: auto;
         display: flex;
         justify-content: center;
         padding-top: 6rem;
-        .image__trumpet{
+
+        .image__trumpet {
           height: 100%;
         }
       }
 
+
+    }
+    .box__text {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
   }
 }
+
+
+
+
