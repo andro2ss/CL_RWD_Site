@@ -599,6 +599,65 @@ html {
     align-items: center;
     height: 37rem;
   }
+  .benefits__box .benefits__container .box__text {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .benefits__box .benefits__container .box__text .benefits__text {
+    position: relative;
+    padding-bottom: 5rem;
+  }
+  .benefits__box .benefits__container .box__text .benefits__text::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 70%;
+    max-width: 26rem;
+    left: 0;
+    bottom: 0;
+  }
+  .benefits__box .benefits__container .box__article1 .benefits__text::after {
+    background: #FB3B64;
+  }
+  .benefits__box .benefits__container .box__article2 .benefits__text::after {
+    background: #08A6E4;
+  }
+  .benefits__box .benefits__container .box__article3 {
+    flex-grow: 3;
+  }
+  .benefits__box .benefits__container .box__article3 .benefits__text::after {
+    background: #55DFB4;
+  }
+  .benefits__box .benefits__container .box__image {
+    width: 40%;
+    margin: 0;
+    position: relative;
+  }
+  .benefits__box .benefits__container .box__image .image__macbook {
+    position: absolute;
+    left: -5rem;
+    top: 11.3rem;
+  }
+  .benefits__box .benefits__container .box__image .item__rectangle {
+    position: absolute;
+    right: 5rem;
+    top: 8rem;
+  }
+  .benefits__box .benefits__container .box__image .image__iphone {
+    position: absolute;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 60%;
+  }
+  .benefits__box .benefits__container .box__image .item__circle {
+    padding: 38%;
+    transform: translateY(-50%) translateX(-50%);
+    top: 45%;
+    left: 50%;
+  }
   .benefits__box .benefits__container:nth-child(2) {
     flex-direction: row-reverse;
   }
@@ -614,76 +673,15 @@ html {
          column-gap: 5%;
   }
   .benefits__box .benefits__container:nth-child(3) .box__trumpet {
-    width: 35%;
-    padding: 3rem 3rem 0 0;
+    width: 40%;
+    padding: 3rem 4rem 0 0;
     margin: 0;
+    position: relative;
   }
   .benefits__box .benefits__container:nth-child(3) .box__trumpet .image__trumpet {
+    position: absolute;
+    bottom: 0;
     height: 70%;
-  }
-  .benefits__box .benefits__container .item__circle {
-    padding: 30%;
-  }
-  .benefits__box .benefits__container .box__image {
-    width: 45%;
-    margin: auto 0;
-  }
-  .benefits__box .benefits__container .box__text {
-    height: 100%;
-    width: 45%;
-  }
-  .benefits__box .benefits__container .box__text .benefits__text {
-    position: relative;
-  }
-  .benefits__box .benefits__container .box__text .benefits__text::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 70%;
-    max-width: 33rem;
-    left: 0;
-    bottom: -3rem;
-  }
-  .benefits__box .benefits__container .box__article1 .benefits__text::after {
-    background: #FB3B64;
-  }
-  .benefits__box .benefits__container .box__article2 .benefits__text::after {
-    background: #08A6E4;
-  }
-  .benefits__box .benefits__container .box__article3 {
-    flex-grow: 3;
-  }
-  .benefits__box .benefits__container .box__article3 .benefits__text::after {
-    background: #55DFB4;
-  }
-  .benefits__box .benefits__containers {
-    flex-direction: row;
-    position: relative;
-  }
-  .benefits__box .benefits__containers .containers__box {
-    flex-grow: 3;
-    margin-right: 6rem;
-  }
-  .benefits__box .benefits__containers .containers__box .box__article3 {
-    background: #FFFFFF;
-    width: 100%;
-    height: 100%;
-    position: relative;
-  }
-  .benefits__box .benefits__containers .containers__box .box__article3::after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    width: 45%;
-    left: 2.2rem;
-    bottom: 2rem;
-    background: #55DFB4;
-  }
-  .benefits__box .box__text {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
