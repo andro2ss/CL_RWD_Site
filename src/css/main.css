@@ -704,13 +704,15 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .pricing__box .pricing__boxes .pricing__container {
   position: relative;
   border-radius: 1.8rem;
   padding: 2rem 2rem;
   margin-bottom: 5.4rem;
-  width: 33.3rem;
+  max-width: 33.3rem;
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -723,13 +725,20 @@ html {
 .pricing__box .pricing__boxes .pricing__container:nth-child(1) .pricing__value {
   color: #FB3B64;
 }
+.pricing__box .pricing__boxes .pricing__container:nth-child(1) .pricing__btn {
+  background: #FB3B64;
+}
 .pricing__box .pricing__boxes .pricing__container:nth-child(2) {
   border: 0.1rem solid #08A6E4;
-  width: 37.9rem;
+  max-width: 37.9rem;
+  width: 100%;
   box-shadow: 5px 10px 27px #07ACE629;
 }
 .pricing__box .pricing__boxes .pricing__container:nth-child(2) .pricing__value {
   color: #08A6E4;
+}
+.pricing__box .pricing__boxes .pricing__container:nth-child(2) .pricing__btn {
+  background: #08A6E4;
 }
 .pricing__box .pricing__boxes .pricing__container:nth-child(3) {
   border: 0.1rem solid #55DFB4;
@@ -737,12 +746,17 @@ html {
 .pricing__box .pricing__boxes .pricing__container:nth-child(3) .pricing__value {
   color: #55DFB4;
 }
+.pricing__box .pricing__boxes .pricing__container:nth-child(3) .pricing__btn {
+  background: #55DFB4;
+}
 .pricing__box .pricing__boxes .pricing__container .container__text {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-width: 12rem;
+  width: 100%;
+  padding-right: 1.5rem;
 }
 .pricing__box .pricing__boxes .pricing__container .container__text .pricing__title--small {
   font-family: "Raleway", sans-serif;
@@ -772,6 +786,7 @@ html {
   font-weight: 400;
   line-height: 4.1rem;
   padding-bottom: 3rem;
+  width: 100%;
 }
 .pricing__box .pricing__boxes .pricing__container .pricing__list .list__item {
   list-style-image: url("../img/Ckechmark-1.svg");
@@ -786,7 +801,6 @@ html {
   line-height: 4.1rem;
   color: #FFFFFF;
   position: absolute;
-  background: black;
   border-radius: 2.3rem;
   padding: 0.7rem 5.45rem;
   transform: translateX(-50%) translateY(-50%);

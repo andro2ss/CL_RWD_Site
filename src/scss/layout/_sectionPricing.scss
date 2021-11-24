@@ -18,36 +18,47 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
     .pricing__container {
       position: relative;
       border-radius: 1.8rem;
       padding: 2rem 2rem;
       margin-bottom: 5.4rem;
-      width: 33.3rem;
+      max-width: 33.3rem;
+      width: 90%;
 
       &:nth-child(1) {
         border: 0.1rem solid $color-redish;
-
         .pricing__value {
           color: $color-redish;
+        }
+        .pricing__btn{
+          background: $color-redish;
         }
       }
 
       &:nth-child(2) {
         border: 0.1rem solid $color-primary;
-        width: 37.9rem;
-        box-shadow: 5px 10px 27px #07ACE629;
+        max-width: 37.9rem;
+        width: 100%;
 
+        box-shadow: 5px 10px 27px #07ACE629;
         .pricing__value {
           color: $color-primary;
+        }
+        .pricing__btn{
+          background: $color-primary;
         }
       }
 
       &:nth-child(3) {
         border: 0.1rem solid $color-green;
-
         .pricing__value {
           color: $color-green;
+        }
+        .pricing__btn{
+          background: $color-green;
         }
       }
 
@@ -62,6 +73,8 @@
         align-items: center;
         justify-content: center;
         min-width: 12rem;
+        width: 100%;
+        padding-right: 1.5rem;
 
         .pricing__title--small {
           font-family: $font-primary;
@@ -95,10 +108,13 @@
         font-weight: 400;
         line-height: 4.1rem;
         padding-bottom: 3rem;
-        .list__item{
+        width: 100%;
+
+        .list__item {
           list-style-image: url("../img/Ckechmark-1.svg");
         }
-        .list__item--bad{
+
+        .list__item--bad {
           list-style-image: url("../img/Close.svg");
         }
       }
@@ -111,7 +127,6 @@
         color: $color-white;
 
         position: absolute;
-        background: black;
         border-radius: 2.3rem;
         padding: 0.7rem 5.45rem;
         transform: translateX(-50%) translateY(-50%);
