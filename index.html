@@ -181,39 +181,42 @@
 
     <!--    +++++++++++++++++++++++ CONTACT ++++++++++++++++++++-->
     <section class="contact" id="contact">
-        <div class="contact__container container">
-            <div class="contact__textBox">
+        <div class="contact__box container">
+            <div class="container__text">
                 <h2 class="contact__title">Any questions?</h2>
                 <p class="contact__text">Leave your email address or call us!</p>
                 <div class="contact__icons">
-                    <img src="./src/img/Mail%20Icon.svg" alt="eMail icon" class="contact__icons--email">
-                    <p class="contact__icons--text">info@bestshop.xyz</p>
-                    <img src="./src/img/Phone%20Icon.svg" alt="phone icon" class="contact__icons--email">
-                    <p class="contact__icons--text">123 456 789</p>
+                    <div class="icons__box">
+                        <img src="./src/img/Mail%20Icon.svg" alt="eMail icon" class="icon__email">
+                        <p class="icon__text">info@bestshop.xyz</p>
+                    </div>
+                    <div class="icons__box">
+                        <img src="./src/img/Phone%20Icon.svg" alt="phone icon" class="icon__phone">
+                        <p class="icon__text">123 456 789</p>
+                    </div>
+
                 </div>
             </div>
-            <div class="contact__formBox">
+            <div class="container__form">
                 <form class="contact__form" id="form">
-                    <div class="contact__form--name">
+                    <div class="form__name">
                         <label for="name">NAME</label>
                         <input type="text" id="name" name="name">
                     </div>
-                    <div class="contact__form--email">
+                    <div class="form__email">
                         <label for="email">EMAIL</label>
                         <input type="email" id="email" name="email">
                     </div>
-                    <div class="contact__form--checkbox">
-                        <input type="checkbox" id="checkbox" name="checkbox">
-                        <label for="checkbox"> I hereby give consent for my personal data included in my application to
+                    <div class="form__checkbox">
+                        <input type="checkbox" id="form__checkbox" name="form__checkbox">
+                        <label for="form__checkbox"> I hereby give consent for my personal data included in my application to
                             be processed for the purposes of the recruitment process under the European Parliament’s and
                             Council of the European Union Regulation on the Protection of Natural Persons as of 27 April
                             2016, with regard to the processing of personal data and on the free movement of such data,
                             and repealing Directive 95/46/EC (Data Protection Directive)</label>
                     </div>
-
                 </form>
                 <button type="submit" form="form" value="Submit" class="contact__form--btn">Send</button>
-
             </div>
         </div>
     </section>
