@@ -839,4 +839,97 @@ html {
     padding: 6rem 2rem;
   }
 }
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+.contact__box .container__text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.contact__box .container__text .contact__title {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.7rem;
+  color: #000000;
+}
+.contact__box .container__text .contact__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #000000;
+}
+.contact__box .container__text .contact__icons .icons__box {
+  display: flex;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding-top: 1.5rem;
+}
+.contact__box .container__text .contact__icons .icons__box .icon__text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #A5A5A5;
+}
+.contact__box .container__form {
+  padding-top: 5rem;
+}
+.contact__box .container__form .contact__form .form__field {
+  display: flex;
+  flex-direction: column;
+}
+.contact__box .container__form .contact__form .form__field .field__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  color: #08A6E4;
+}
+.contact__box .container__form .contact__form .form__field .field__input {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  color: #000000;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  border: none;
+  border-bottom: 2px solid #A5A5A5;
+}
+.contact__box .container__form .contact__form .form__checkbox {
+  display: flex;
+  position: relative;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__checkmark {
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  top: 0.4rem;
+  border: 1px solid black;
+  border-radius: 0.4rem;
+  background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
+  background-size: cover;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  color: #A5A5A5;
+  padding-bottom: 2rem;
+  padding-left: 3.5rem;
+  cursor: pointer;
+}
 /*# sourceMappingURL=main.css.map */

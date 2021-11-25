@@ -1,0 +1,120 @@
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  max-width: 37.5rem;
+  padding: 0 3rem;
+  margin: 0 auto;
+
+  .container__text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+
+    .contact__title {
+      font-family: $font-primary;
+      font-weight: 400;
+      font-size: 4rem;
+      line-height: 4.7rem;
+      color: $color-black;
+    }
+
+    .contact__text {
+      font-family: $font-regular;
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 2.2rem;
+      color: $color-black;
+    }
+
+    .contact__icons {
+
+      .icons__box {
+        display: flex;
+        column-gap: 0.8rem;
+        padding-top: 1.5rem;
+
+        .icon__text {
+          font-family: $font-regular;
+          font-weight: 400;
+          font-size: 1.6rem;
+          line-height: 2.2rem;
+          color: $color-grey;
+        }
+      }
+    }
+  }
+
+  .container__form {
+    padding-top: 5rem;
+
+    .contact__form {
+      .form__field {
+        display: flex;
+        flex-direction: column;
+
+        .field__description {
+          font-family: $font-regular;
+          font-weight: 700;
+          font-size: 1.1rem;
+          line-height: 1.5rem;
+          color: $color-primary;
+        }
+
+        .field__input {
+          font-family: $font-regular;
+          font-weight: 400;
+          font-size: 2rem;
+          line-height: 2.5rem;
+          color: $color-black;
+          margin-top: 0.5rem;
+          margin-bottom: 3rem;
+          border: none;
+          border-bottom: 2px solid $color-grey;
+        }
+      }
+
+      .form__checkbox {
+        display: flex;
+        position: relative;
+
+        .checkbox__input {
+          position: absolute;
+          width: 0;
+          height: 0;
+
+          //&:checked {
+          //  background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
+          //}
+        }
+
+        .checkbox__checkmark {
+          position: absolute;
+          width: 2.4rem;
+          height: 2.4rem;
+          top: 0.4rem;
+          border: 1px solid black;
+          border-radius: 0.4rem;
+          //background-image: url("../img/Checkmark.svg");
+            background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
+
+          //background-repeat: no-repeat;
+          background-size: cover;
+
+
+        }
+
+        .checkbox__description {
+          font-family: $font-regular;
+          font-weight: 400;
+          font-size: 1.2rem;
+          line-height: 1.7rem;
+          color: $color-grey;
+          padding-bottom: 2rem;
+          padding-left: 3.5rem;
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+}
