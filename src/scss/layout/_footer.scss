@@ -1,0 +1,31 @@
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.1rem 3rem 2.1rem 1.7rem;
+  box-shadow: 0px -5px 40px #00000029;
+  margin-top: 4.5rem;
+
+  .text__box {
+    display: flex;
+    flex-direction: column;
+
+    .logo__footer {
+      font-size: 2.6rem;
+      line-height: 3rem;
+    }
+
+    .copyright {
+      font-size: 1.1rem;
+      font-family: $font-regular;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: $color-grey;
+    }
+  }
+
+  .icons__box {
+    display: flex;
+    column-gap: 2rem;
+  }
+}
