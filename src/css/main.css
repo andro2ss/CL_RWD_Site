@@ -914,13 +914,21 @@ html {
 }
 .contact__box .container__form .contact__form .form__checkbox .checkbox__checkmark {
   position: absolute;
+  width: 2.2rem;
+  height: 2.2rem;
+  top: 0.4rem;
+  background: url("../img/Checkmark.svg") 0 0 no-repeat;
+  background-size: cover;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  top: -0.1rem;
+  left: -0.1rem;
   width: 2.4rem;
   height: 2.4rem;
-  top: 0.4rem;
   border: 1px solid black;
   border-radius: 0.4rem;
-  background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
-  background-size: cover;
 }
 .contact__box .container__form .contact__form .form__checkbox .checkbox__description {
   font-family: "Open Sans", sans-serif;
