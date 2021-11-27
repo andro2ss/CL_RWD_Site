@@ -923,12 +923,26 @@ html {
 .contact__box .container__form .contact__form .form__checkbox .checkbox__checkmark:after {
   content: "";
   position: absolute;
-  top: -0.1rem;
-  left: -0.1rem;
+  display: block;
+  top: -0.2rem;
+  left: -0.2rem;
   width: 2.4rem;
   height: 2.4rem;
   border: 1px solid black;
   border-radius: 0.4rem;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__input:checked ~ .checkbox__checkmark {
+  background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
+  background-size: cover;
+  width: 2.8rem;
+  height: 2.8rem;
+  top: 0.2rem;
+  left: -0.3rem;
+}
+.contact__box .container__form .contact__form .form__checkbox .checkbox__input:checked ~ .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
 }
 .contact__box .container__form .contact__form .form__checkbox .checkbox__description {
   font-family: "Open Sans", sans-serif;

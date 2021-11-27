@@ -81,10 +81,6 @@
           position: absolute;
           width: 0;
           height: 0;
-
-          //&:checked {
-          //  background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
-          //}
         }
 
         .checkbox__checkmark {
@@ -95,18 +91,33 @@
           background: url("../img/Checkmark.svg") 0 0 no-repeat;
           background-size: cover;
 
-          //background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
-          &:after{
+          &:after {
             content: "";
             position: absolute;
-            top: -0.1rem;
-            left: -0.1rem;
+            display: block;
+            top: -0.2rem;
+            left: -0.2rem;
             width: 2.4rem;
             height: 2.4rem;
             border: 1px solid black;
             border-radius: 0.4rem;
           }
 
+        }
+
+        .checkbox__input:checked ~ .checkbox__checkmark {
+          background: url("../img/Ckechmark-1.svg") 0 0 no-repeat;
+          background-size: cover;
+          width: 2.8rem;
+          height: 2.8rem;
+          top: 0.2rem;
+          left: -0.3rem;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+
+          }
         }
 
         .checkbox__description {
