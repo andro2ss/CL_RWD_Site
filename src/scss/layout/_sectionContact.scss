@@ -46,6 +46,8 @@
 
   .container__form {
     padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
 
     .contact__form {
       .form__field {
@@ -112,6 +114,7 @@
           height: 2.8rem;
           top: 0.2rem;
           left: -0.3rem;
+
           &:after {
             content: "";
             position: absolute;
@@ -133,5 +136,19 @@
       }
     }
 
+    .contact__btn {
+      font-family: $font-regular;
+      font-weight: 700;
+      font-size: 1.3rem;
+      line-height: 1.8rem;
+      color: $color-white;
+
+      border: none;
+      align-self: flex-end;
+      background: $color-primary;
+      padding: 2rem 9.7rem;
+      border-radius: 35px;
+      box-shadow: 5px 10px 14px #07ACE629;
+    }
   }
 }

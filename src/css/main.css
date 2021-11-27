@@ -880,6 +880,8 @@ html {
 }
 .contact__box .container__form {
   padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 .contact__box .container__form .contact__form .form__field {
   display: flex;
@@ -953,5 +955,18 @@ html {
   padding-bottom: 2rem;
   padding-left: 3.5rem;
   cursor: pointer;
+}
+.contact__box .container__form .contact__btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  color: #FFFFFF;
+  border: none;
+  align-self: flex-end;
+  background: #08A6E4;
+  padding: 2rem 9.7rem;
+  border-radius: 35px;
+  box-shadow: 5px 10px 14px #07ACE629;
 }
 /*# sourceMappingURL=main.css.map */
